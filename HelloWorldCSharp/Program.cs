@@ -6,7 +6,21 @@ namespace HelloWorldCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
+            try
+            {
+               var key = "true";
+               var j = Convert.ToBoolean(key);
+                Console.WriteLine(j);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("there was as erro");
+            }
+            var number = 293;
+            var i = Convert.ToString(number);
+            Console.WriteLine(i);
+
         }
+
     }
 }
